@@ -1,11 +1,11 @@
 import React from 'react'
-import ItemList from './ItemList'
+import ItemDetail from './ItemDetail'
 import { useParams } from 'react-router-dom'
 
-const ItemListContainer = () => {
+const ItemDetailContainer = () => {
 
-
-    const { category } = useParams()
+    const { id } = useParams()
+    console.log(id)
 
     const productos = [
         { id: 1, categoria: "remeras", titulo: "Remera Nike Azul", precio: 7000, imagenUrl: "https://i.postimg.cc/2Sg5Cdcq/remera-Nike-Azul.jpg", alt: "Remera Nike Azul" },
@@ -21,20 +21,18 @@ const ItemListContainer = () => {
         { id: 11, categoria: "calzas", titulo: "Calza Push Up Azul", precio: 13000, imagenUrl: "https://i.postimg.cc/1XytL9WJ/calza-Push-Up-Azul.jpg", alt: "Calza" },
         { id: 12, categoria: "calzas", titulo: "Calza Push Up Morada", precio: 13000, imagenUrl: "https://i.postimg.cc/Hssnzk8L/calza-Push-Up-Morada.jpg", alt: "Calza" }
     ]
-
-    const productosFiltrados = productos.filter((producto) => producto.categoria == category)
-
+    const productosFiltrado = productos.find((producto) => producto.id == id)
 
 
     return (
         <div>
 
-            {
-                category ? <ItemList productos={productosFiltrados} /> : <ItemList productos={productos} />
-            }
+            <ItemDetail
+                producto={productosFiltrado}
+            />
 
         </div>
     )
 }
 
-export default ItemListContainer
+export default ItemDetailContainer

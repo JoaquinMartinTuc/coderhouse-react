@@ -1,0 +1,24 @@
+.navBar {
+background-color: #060647;
+}
+
+.letras{
+    color: white;
+}
+
+
+.fondo {
+    background-color: black;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
