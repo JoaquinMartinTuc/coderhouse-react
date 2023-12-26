@@ -10,8 +10,8 @@ const NavBar = () => {
 
             <Flex>
                 <Link to={"/"}>
-                    <Box p='4' className='letras'>
-                        Cens Sport
+                    <Box p='4'>
+                        <img className='logo' src="https://i.postimg.cc/Ssjs1vbZ/logo-cens-sport-removebg-preview.png" alt="" />
                     </Box>
                 </Link>
 
