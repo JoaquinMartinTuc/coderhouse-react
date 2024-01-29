@@ -5,7 +5,6 @@ const ItemList = ({ productos }) => {
     return (
         <section>
 
-
             <article className='card fondo'>
 
 

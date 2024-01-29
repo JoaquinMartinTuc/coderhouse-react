@@ -23,8 +23,8 @@ const ItemDetail = ({ producto }) => {
                     />
                     <Stack mt='6' spacing='3'>
                         <Heading size='md'>{producto.titulo}</Heading>
-                        <Text>
-                            {producto.descripcion}
+                        <Text color='blue.600' fontSize='2x1'>
+                            Id: {producto.id}
                         </Text>
                         <Text color='blue.600' fontSize='2x1'>
                             ${producto.precio}
@@ -35,7 +35,7 @@ const ItemDetail = ({ producto }) => {
                 <Divider />
                 <CardFooter>
                     <ButtonGroup spacing='2'>
-                        <ItemCount />
+                        <ItemCount item={producto} />
                     </ButtonGroup>
                 </CardFooter>
             </Card >
