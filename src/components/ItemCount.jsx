@@ -46,11 +46,11 @@ const ItemCount = (item) => {
 
         <p className='pDeContador'>{contador}</p>
 
-        <Button colorScheme='teal' size='m' onClick = {restar} className='botonRestar'>-</Button>
+        <Button colorScheme='teal' size='xs' onClick = {restar}>-</Button>
 
         <Button onClick = {agregaralCarrito} className='botonAgregarCarrito'>Agregar al carrito</Button>
 
-        <Button colorScheme='teal' size='m' onClick = {sumar} className='botonSumar'>+</Button>
+        <Button colorScheme='teal' size='xs' onClick = {sumar}>+</Button>
 
         
 
